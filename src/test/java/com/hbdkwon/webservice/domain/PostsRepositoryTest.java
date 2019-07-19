@@ -1,5 +1,7 @@
 package com.hbdkwon.webservice.domain;
 
+import com.hbdkwon.webservice.domain.posts.Posts;
+import com.hbdkwon.webservice.domain.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

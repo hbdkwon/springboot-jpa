@@ -1,7 +1,7 @@
 package com.hbdkwon.webservice.service;
 
-import com.hbdkwon.webservice.domain.Posts;
-import com.hbdkwon.webservice.domain.PostsRepository;
+import com.hbdkwon.webservice.domain.posts.Posts;
+import com.hbdkwon.webservice.domain.posts.PostsRepository;
 import com.hbdkwon.webservice.dto.posts.PostsSaveRequestDto;
 import org.junit.After;
 import org.junit.Test;

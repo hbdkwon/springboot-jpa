@@ -1,6 +1,6 @@
 package com.hbdkwon.webservice.dto.posts;
 
-import com.hbdkwon.webservice.domain.Posts;
+import com.hbdkwon.webservice.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

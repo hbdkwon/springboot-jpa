@@ -1,5 +1,6 @@
-package com.hbdkwon.webservice.domain;
+package com.hbdkwon.webservice.domain.posts;
 
+import com.hbdkwon.webservice.domain.BaseTimeEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;

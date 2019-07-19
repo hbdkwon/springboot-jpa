@@ -1,6 +1,6 @@
 package com.hbdkwon.webservice.service;
 
-import com.hbdkwon.webservice.domain.PostsRepository;
+import com.hbdkwon.webservice.domain.posts.PostsRepository;
 import com.hbdkwon.webservice.dto.posts.PostsMainResponseDto;
 import com.hbdkwon.webservice.dto.posts.PostsSaveRequestDto;
 import lombok.AllArgsConstructor;
