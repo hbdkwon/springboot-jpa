@@ -14,21 +14,25 @@ cache:
 
 script: "./gradlew clean build"
 
-# CI 실행 완료시 메일로 알람
-notifications:
-  email:
-    recipients:
-      - hbdkwon@gmail.com
+before_deploy:
+  - zip -r springboot-jpa *
+  - mkdir -p deploy
+  - mv springboot-jpa.zip deploy/springboot-jpa.zip
 
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
     secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
-    bucket: springboot-jpa-deploy # 6-3-3에서 생성한 S3 버킷
+    bucket: springboot-jpa-deploy # S3 버킷
     region: ap-northeast-2
     skip_cleanup: true
     acl: public_read
     wait-until-deployed: true
     on:
-      repo: hbdkwon/springboot-jpa #Github 주소
+      repo: hbdkwon/springboot-jpa # Github 주소
       branch: master
+
+notifications:
+  email:
+    recipients:
+      - hbdkwon@gmail.com
