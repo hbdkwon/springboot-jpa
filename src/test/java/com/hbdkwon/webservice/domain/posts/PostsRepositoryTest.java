@@ -1,4 +1,4 @@
-package com.hbdkwon.webservice.domain;
+package com.hbdkwon.webservice.domain.posts;
 
 import com.hbdkwon.webservice.domain.posts.Posts;
 import com.hbdkwon.webservice.domain.posts.PostsRepository;
