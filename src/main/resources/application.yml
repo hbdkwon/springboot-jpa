@@ -1,6 +1,10 @@
 spring:
   profiles:
     active: local
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
 ---
 spring:
@@ -15,3 +19,17 @@ spring:
       use-new-id-generator-mappings: false
       ddl-auto: create-drop
     show-sql: true
+
+---
+spring.profiles: set1
+spring.profiles.include: real-db
+
+server:
+  port: 8081
+
+---
+spring.profiles: set2
+spring.profiles.include: real-db
+
+server:
+  port: 8082
