@@ -17,7 +17,6 @@ public class Application {
         new SpringApplicationBuilder(Application.class)
                 .properties(APPLICATION_LOCATIONS)
                 .run(args);
-        // SpringApplication.run(Application.class, args);
     }
 
 }
