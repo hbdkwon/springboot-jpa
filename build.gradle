@@ -6,7 +6,7 @@ plugins {
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.hbdkwon'
-version = '0.0.6'
+version = '0.0.7'
 sourceCompatibility = '1.8'
 
 configurations {
