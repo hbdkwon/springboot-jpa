@@ -17,4 +17,9 @@ public class WebController {
         model.addAttribute("posts", postsService.findAllDesc());
         return "main";
     }
+
+    @GetMapping("/react")
+    public String react() {
+        return "react";
+    }
 }
