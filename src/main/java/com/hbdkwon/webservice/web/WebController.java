@@ -22,4 +22,9 @@ public class WebController {
     public String react() {
         return "react";
     }
+
+    @GetMapping("angular")
+    public  String angular() {
+        return "angular";
+    }
 }
