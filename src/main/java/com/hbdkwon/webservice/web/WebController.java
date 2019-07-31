@@ -23,7 +23,7 @@ public class WebController {
         return "react";
     }
 
-    @GetMapping("angular")
+    @GetMapping("/angular")
     public  String angular() {
         return "angular";
     }
